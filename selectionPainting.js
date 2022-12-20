@@ -55,7 +55,7 @@ paintings.forEach( painting => {
             })
 
             // select the painting content
-            paintingContent = painting.querySelector(".tile-content")
+            let paintingContent = painting.querySelector(".tile-content")
             // so the class "tile-content-selected" can be added
             paintingContent.classList.add("tile-content-selected")
             // add the "tile-image-selected" to the tile image
@@ -67,7 +67,7 @@ paintings.forEach( painting => {
                 left: `${posXContainer*(-1)}px`,
                 width: `90vw`,
                 height: `90vh`,
-                margin: `5vh 5vw`
+                margin: `5vh 5vw`,
             }, {
                 duration: openingClosingTime,
                 fill: "forwards",
